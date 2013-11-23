@@ -1,0 +1,20 @@
+{
+  "name": "nodejs_blog",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "jade": "*",
+    "consolidate": "~0.9.1",
+    "jsdom": "~0.8.8",
+    "memory-cache": "0.0.5",
+    "memcached": "~0.2.6",
+    "sequelize": "~2.0.0-beta.1",
+    "solr": "~0.2.2",
+    "swig": "~1.1.0",
+    "flow": "~0.2.3"
+  }
+}
