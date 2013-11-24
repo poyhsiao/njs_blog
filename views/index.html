@@ -1,11 +1,23 @@
-<html>
+<!doctype html>
+<html lang="en" data-ng-app="phonecatApp">
     <head>
-        <script src="javascripts/require.js"></script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <script src="/javascripts/require.js"></script>
+        <script>
+            require(["javascripts/dep"]);
+        </script>
     </head>
-    <body>
-        Hello World! Now¡G{{ __filename }}
-    <script>
-        require("javascripts/dep");
-    </script>
+    <body ng-controller="PhoneListCtrl">
+        <ul>
+            <li ng-repeat="phone in phones">
+                [[ phone.name ]]
+                <p>[[ phone.snippet ]]</p>
+            </li>
+        </ul>
+        Current Time is: [[ time ]]
+        <br />
+        Title: {{ title }}
+        <canvas id="myCanvas"></canvas>
     </body>
 </html>
